@@ -13,7 +13,11 @@ A compact, tested hybrid-retrieval core tailored to MindBrain's Search & Platfor
 
 ```bash
 python3 -m unittest discover -s tests -v
+python3 -m src.app < examples/rankings.jsonl
 ```
+
+The example produces explainable reciprocal-rank-fusion results, including the
+retrieval sources behind each document—useful evidence for a RAG platform.
 
 ## Integration shape
 
